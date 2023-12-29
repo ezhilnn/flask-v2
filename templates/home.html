@@ -2,48 +2,29 @@
 <html>
 <head>
   <title>My Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <style>
-    h1{
-      font-size:40px;
-      font-family:roboto;
-      font-weight:normal;
-      color:rgb(100,100,100);
-    }
     #banner{
       height:360px;
-      padding:0px;
+      width:100%;
       object-fit:cover;
-    }
-    h2{
-      font-family:roboto;
-      font-size:32px;
-      font-weight:normal;
-      color:rgb(100,100,100);
-      text-align:center;
-    }
-    p{
-      font-family:roboto;
-      color:rgb(80,80,80);
-    }
-    #container{
-      max-width:720px;
-      margin:0 auto ;
     }
   </style>
 </head>
-<body>
-  <div id="container">
-    <h1 style="text-align:center;">Careers</h1>
+<body class="container">
+  <div >
+    <h1 class="text-center mt-2 mb-4">Careers</h1>
 
-    <img id="banner" src="https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
-    <h2>About Company</h2>
-    <p>
+    <img class="img-fluid" id="banner" src="https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
+    <h2 class="text-center">About Company</h2>
+    <p class="lead">
       toothpaste carrot banana elephant fireplace umbrella chair strawberry kangaroo bicycle sunglasses watermelon pineapple potato sandwich skateboard helicopter broccoli pineapple balloon peach tomato headphones computer keyboard avocado necklace telescope caterpillar helicopter pineapple broccoli grapefruit telephone cabbage pineapple giraffe cauliflower orange calculator watermelon strawberry raspberry pineapple potato tomato
     </p>
-    <h2>Open Positions</h2>
+    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <p>TODO-show the jobs here</p>
-    <div style="text-align:center;">
-      <button>Contact Us</button>
+    <div class="text-center">
+      <button class="btn btn-primary btn-lg">Contact Us</button>
+      <p class="mt-2">Copy Rights 2023</p>
     </div>
   </div>
 </body>
