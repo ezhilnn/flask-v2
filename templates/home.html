@@ -8,19 +8,29 @@
       height:360px;
       width:100%;
       object-fit:cover;
+      margin-bottom:10px;
     }
   </style>
 </head>
-<body class="container">
+  
+<body >
   {% include 'nav.html' %}
-  <div >
+  <img class="img-fluid" id="banner" src="https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
+  <div class="container" >
     <h1 class="text-center mt-2 mb-4">Careers</h1>
 
-    <img class="img-fluid" id="banner" src="https://plus.unsplash.com/premium_photo-1661266819853-ac00dcaf21d2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="100%">
-    <h2 class="text-center">About Company</h2>
-    <p class="lead">
-      toothpaste carrot banana elephant fireplace umbrella chair strawberry kangaroo bicycle sunglasses watermelon pineapple potato sandwich skateboard helicopter broccoli pineapple balloon peach tomato headphones computer keyboard avocado necklace telescope caterpillar helicopter pineapple broccoli grapefruit telephone cabbage pineapple giraffe cauliflower orange calculator watermelon strawberry raspberry pineapple potato tomato
-    </p>
+    
+    <h2 class="text-center mb-5">About Company</h2>
+   <div class="row mb-16" style="margin-bottom:16px;">
+     <div class="col-md-6">
+        <p class="lead">
+          toothpaste carrot banana elephant fireplace umbrella chair strawberry kangaroo bicycle sunglasses watermelon pineapple potato sandwich skateboard helicopter broccoli pineapple balloon peach tomato headphones computer keyboard avocado necklace telescope caterpillar helicopter pineapple broccoli grapefruit telephone cabbage pineapple giraffe cauliflower orange calculator watermelon strawberry raspberry pineapple potato tomato
+        </p>
+      </div>
+     <div class="d-none d-md-block col-md-6">
+       <img src="https://img.freepik.com/free-photo/into-success-group-young-freelancers-office-have-conversation-smiling_146671-13567.jpg?size=626&ext=jpg" style="height:320px;border-radius:5px;">
+     </div>
+   </div>
     <h2 class="text-center mt-2 mb-4">Job Openings</h2>
     <p>
       {% for job in jobs %}
@@ -31,8 +41,9 @@
     </p>
     <div class="text-center">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-      <p class="mt-2">Copy Rights 2023</p>
+     
     </div>
   </div>
+ {% include 'footer.html' %}
 </body>
 </html>
